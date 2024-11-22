@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FloaterV</title>
     <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <style>
         /* General Reset */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
         }
 
@@ -25,9 +25,10 @@
 
         header h1 {
             margin: 0;
-            font-size: 4em;
+            font-size: 3.5em;
             color: darkgoldenrod;
-            font-family: 'Bangers', cursive; /* Basketball-themed font */
+            font-family: 'Poppins', sans-serif; /* Clean and professional font */
+            letter-spacing: 2px;
         }
 
         /* Navigation Bar */
@@ -35,20 +36,44 @@
             background-color: #444;
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 1.5em;
-            padding: 15px 20px;
-            transition: background-color 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3em;
+            padding: 15px 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         nav a:hover {
             background-color: darkgoldenrod;
+            color: #333;
+        }
+
+        /* Content Styling */
+        section {
+            text-align: center;
+            padding: 50px 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        section p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -64,5 +89,18 @@
         <a href="#games">Games</a>
         <a href="#apps">Apps</a>
     </nav>
-</body>
-</html>
+
+    <!-- Content Section -->
+    <section id="home">
+        <h2>Welcome to FloaterV</h2>
+        <p>Discover the latest updates, games, and apps that bring excitement to your digital life. Explore our curated content and stay inspired!</p>
+    </section>
+
+    <section id="games">
+        <h2>Games</h2>
+        <p>Dive into an immersive world of games. From action-packed adventures to strategy masterpieces, we’ve got something for every gamer!</p>
+    </section>
+
+    <section id="apps">
+        <h2>Apps</h2>
+        <p>Browse our collection of innovative apps designed to enhance your productivity, creativity,
